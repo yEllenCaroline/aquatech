@@ -1,11 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Aquatech</title>
+    <link rel="stylesheet" href="cadastro.css">
 </head>
+
 <body>
-    <h1>Estamos na tela de cadastro!</h1>
+    <div class="header">
+        <div class="container">
+            <h1 class="titulo">Aquatech</h1>
+            <ul class="navbar">
+                <a href="./index.html">
+                    <li> Inicial </li>
+                </a>
+
+                <a href="./simulador.html">
+                    <li> Simulador </li>
+                </a>
+                <li> | </li>
+                <a href="./login.html">
+                    <li> Login </li>
+                </a>
+                <a href="./cadastro.html">
+                    <li> Cadastro </li>
+                </a>
+            </ul>
+
+        </div>
+    </div>
+
+    <!-- BANNER -->
+
+    <div class="banner">
+        <div class="container">
+            <div class="caixa">
+                <div class="caixa2">
+                        <p>Bem-vindo!</p>
+                        
+                        <h4 class="texto">Nome:</h4>
+                        <input id="inp_nome" type="text" placeholder="Seu nome">
+                    
+                        <h4 class="texto">E-mail:</h4>
+                        <input id="inp_email" type="email" placeholder="meuemail@provedor.com">
+                    
+                    
+                        <h4 class="texto">Senha:</h4>
+                        <input id="inp_senha" type="password" placeholder="*********">
+                    
+                    
+                        <h4 class="texto">Confirmação da Senha</h4>
+                        <input id="inp_senhaConfirm" type="password" placeholder="*********">
+                        <br>
+                        <button>Cadastrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  
 </body>
+
 </html>
