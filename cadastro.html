@@ -37,30 +37,47 @@
     <div class="banner">
         <div class="container">
             <div class="caixa">
-                <div class="caixa2">
-                        <p>Bem-vindo!</p>
-                        
-                        <h4 class="texto">Nome:</h4>
-                        <input id="inp_nome" type="text" placeholder="Seu nome">
-                    
-                        <h4 class="texto">E-mail:</h4>
-                        <input id="inp_email" type="email" placeholder="meuemail@provedor.com">
-                    
-                    
-                        <h4 class="texto">Senha:</h4>
-                        <input id="inp_senha" type="password" placeholder="*********">
-                    
-                    
-                        <h4 class="texto">Confirmação da Senha</h4>
-                        <input id="inp_senhaConfirm" type="password" placeholder="*********">
-                        <br>
-                        <button>Cadastrar</button>
+                <div class="bemVindo"
+                        <h1>Bem-vindo!</h1>
                 </div>
+                <div class="inputs">
+                        <label class="texto">Nome:</label>
+                        <input id="inp_nome" type="text" placeholder="Seu nome"><br>
+                    
+                        <label class="texto">E-mail:</label>
+                        <input id="inp_email" type="email" placeholder="meuemail@provedor.com"><br>
+                    
+                    
+                        <label class="texto">Senha:</label>
+                        <input id="inp_senha" type="password" placeholder="*********"><br>
+                    
+                    
+                        <label class="texto">Confirmação da Senha:</label>
+                        <input id="inp_senhaConfirm" type="password" placeholder="*********"><br>
+                    </div>           
+                        
+                        <button onclick="cadastrar()">Cadastrar</button>
             </div>
         </div>
     </div>
 
   
 </body>
+<script>
+    function cadastrar(){
+        var nome = inp_nome.value
+        var email = inp_email.value
+        var senha = inp_senha.value
+        var confirm = inp_senhaConfirm.value
+
+        var espaço = nome.split(" ");
+
+            var PrimeiroNome = espaço[0];
+
+        if( senha == confirm){
+            alert(`Bem Vindo(a) ${PrimeiroNome}, cadastro realizado!`)
+        }
+    } 
+</script>
 
 </html>

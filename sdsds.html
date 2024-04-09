@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Textarea com Texto no Meio</title>
+<style>
+    textarea {
+        width: 300px;
+        height: 200px;
+    }
+</style>
+</head>
+<body>
+    <h2>Escreva seu texto começando pelo meio:</h2>
+    <textarea id="texto"></textarea>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var textarea = document.getElementById("texto");
+            var texto = "Texto que começa no meio.";
+            var meio = texto.length / 2;
+            textarea.value = texto;
+            textarea.focus();
+            textarea.setSelectionRange(meio, meio);
+        });
+    </script>
+</body>
+</html>

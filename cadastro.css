@@ -49,32 +49,60 @@ body {
    height: 100%;
 }
 .caixa{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
     margin-top: 4.5%;
-    height:100%;
-    width: 36%;
+    height: 90%;
+    width: 38%;
     background-color: #f7f7f7;
-    color: rgb(219, 126, 145);
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-}
-.texto{
-    width: 45.7%;
-    flex-direction: column;
-    align-self: center;
-    text-align: left;
-}
-.caixa2{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex;
-    
-}
-p{
-    font-size:20pt;
+    color: #db7e91;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
+    border-radius: 5px;
 }
+.inputs{
+   height: 70%;
+   width: 63%;
+   justify-content:flex-start;
+   align-items: center;
+   margin-top: 22px;
+   display: flex;
+   flex-direction: column;
+
+}
+.texto {
+   width: 87%;
+   display: flex;
+   flex-direction: row;
+}
+
+.caixa input{
+   height: 30px;
+   width: 85%;
+   border-style:solid;
+   border-color: #32b9cd;
+   border-width: 3px;
+   border-radius: 10px;
+   text-align: center;
+   justify-content: center;;
+
+}
+.caixa ::placeholder{
+   text-align:  center;
+}
+
 button{
-    height: 50%;
-    width: 30%;
+   background-color:  red;
+   height: 40px;
+   width: 120px;
+   color: white;
+   border-style: none;
+   border-radius: 5px;
+   font-size: 14pt;
+ margin-bottom: 20px;
+}
+.bemVindo{
+   padding-top: 25px;
+   font-size: 20pt;
 }
